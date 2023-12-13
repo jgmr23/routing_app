@@ -1,0 +1,9 @@
+/.dart_tool/
+/build/
+/plugins/here_sdk/
+/.flutter-plugins
+/.flutter-plugins-dependencies
+/pubspec.lock
+/.idea/
+/.DS_Store
+/plugins/.DS_Store
