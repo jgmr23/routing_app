@@ -43,7 +43,6 @@ void _initializeHERESDK() async {
   // Needs to be called before accessing SDKOptions to load necessary libraries.
   SdkContext.init(IsolateOrigin.main);
 
-  //PLEASE USE HERE MAPS SDK VERSION 4.14.5
   // Set your credentials for the HERE SDK.
   String accessKeyId = "";
   String accessKeySecret = "";
@@ -153,11 +152,16 @@ class _MyAppState extends State<MyApp> {
 
   void _startNavigation() {
     _routingExample?.calculateRouteFromCurrentLocation();
+    //_routingExample?.parseData();
   }
 
   void _clearMapButtonClicked() {
     _routingExample?.navigationSettings.removeAllMapMarker();
     _routingExample?.navigationSettings.stopNavigation();
+  }
+
+  void checkMap(){
+
   }
 
   @override
